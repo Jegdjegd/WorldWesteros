@@ -1,0 +1,24 @@
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.nav-link.active {
+    box-shadow: inset 0px 5px 40px -12px rgba(241, 39, 17, 0.562); 
+    border-style: none;
+    border-radius: 15px;
+}
+
+
+.nav-tabs .nav-link {
+    border-style: none;
+}
+
+.metamorphous-text {
+    font-family: "Metamorphous", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
