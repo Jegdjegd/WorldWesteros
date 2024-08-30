@@ -2,23 +2,83 @@
 
     <div class="container-fluid mx-auto justify-content-center metamorphous-text ">
 
-        <nav class="navbar bg-dark navbar-expand-lg  " data-bs-theme="dark">
-          <a class="navbar-brand" href="#">WesterosWorld</a>
+        <nav 
+          class="navbar bg-dark navbar-expand-lg" 
+          data-bs-theme="dark">
+          <a class="navbar-brand" 
+            [routerLink]="['/home']" 
+            >WesterosWorld</a>
 
-        <div class="nav nav-tabs  text-bg-dark" id="nav-tab" role="tablist">
+        <div 
+          class="nav nav-tabs text-bg-dark" 
+          id="nav-tab" role="tablist">
 
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Libros</button>
+            <button 
+              class="nav-link active"
+              [routerLink]="['/libros']" 
+              id="nav-home-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-home" 
+              type="button" 
+              role="tab" 
+              aria-controls="nav-home" 
+              aria-selected="true">Libros</button>
 
-            <button class="nav-link " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Series</button>
+            <button 
+              class="nav-link"
+              [routerLink]="['/series']" 
+              id="nav-profile-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-profile" 
+              type="button" 
+              role="tab" 
+              aria-controls="nav-profile" 
+              aria-selected="false">Series</button>
 
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Casas</button>
+            <button 
+              class="nav-link"
+              [routerLink]="['/casas']" 
+              id="nav-contact-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-contact" 
+              type="button" 
+              role="tab" 
+              aria-controls="nav-contact" 
+              aria-selected="false">Casas</button>
             
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Personajes</button>
+            <button 
+              class="nav-link"
+              [routerLink]="['/personajes']" 
+              id="nav-contact-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-contact" 
+              type="button" 
+              role="tab" 
+              aria-controls="nav-contact" 
+              aria-selected="false">Personajes</button>
             
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Dragones</button>
+            <button 
+              class="nav-link"
+              [routerLink]="['/dragones']"
+              id="nav-contact-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-contact" 
+              type="button" 
+              role="tab" 
+              aria-controls="nav-contact" 
+              aria-selected="false">Dragones</button>
 
          
-            <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+            <button 
+              class="nav-link"
+              id="nav-disabled-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-disabled" 
+              type="button" 
+              role="tab" 
+              aria-controls="nav-disabled" 
+              aria-selected="false" 
+              disabled>Disabled</button>
 
           </div>
       </nav>
