@@ -1,0 +1,31 @@
+<div>
+
+    <h1>LIBROS WESTEROS</h1>
+    <h2>AÚN EN CONSTRUCCIÓN</h2>
+  
+    <div class="card-container">
+     @for (books of libros; track $index) {
+       <div class="card">
+         <div class="card-header">
+           <img src="./images/card-houses/placeholder.svg" alt="imagen cards">
+         </div>
+   
+         <div class="card-body ft-strg ft-lt contenido">
+           <section class="head-content">
+             <h3>Nombre : {{ books.name }} <hr>
+                Fecha publicación: <span>{{ books.released }}</span></h3>
+           </section>
+           <section class="">
+             <p>Publicado por: {{ books.publisher }} </p>
+             <hr>
+             Desde : <p>{{books.country}}</p>
+           </section>
+         </div>
+   
+         <div class="card-footer ft-lt">
+           <button > Ver más</button>
+         </div>
+       </div>
+     }
+   </div>
+  

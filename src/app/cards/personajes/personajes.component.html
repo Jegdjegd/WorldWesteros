@@ -1,0 +1,32 @@
+<div>
+
+  <h1>PERSONAJES WESTEROS</h1>
+  <h2>Aún en construcción</h2>
+
+  <div class="card-container">
+   @for (character of personajes; track $index) {
+     <div class="card">
+       <div class="card-header">
+         <img src="./images/card-houses/placeholder.svg" alt="imagen cards">
+       </div>
+ 
+       <div class="card-body ft-strg ft-lt contenido">
+         <section class="head-content">
+           <h3>{{ character.name }} <span>{{ character.aliases }}</span></h3>
+         </section>
+         <section class="">
+           <p>{{ character.gender }} </p>
+           <hr>
+           <p>{{character.tvSeries}}</p>
+           <p>{{ character.culture }}</p> 
+           <hr>
+           <p>{{ character.playedBy }}</p>
+         </section>
+       </div>
+ 
+       <div class="card-footer ft-lt">
+         <button > Ver más</button>
+       </div>
+     </div>
+   }
+ </div>

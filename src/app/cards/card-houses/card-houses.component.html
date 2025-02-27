@@ -1,0 +1,31 @@
+<div>
+
+   <h1>CASAS WESTEROS</h1>
+   <h2>Aún en construcción</h2>
+
+   <div class="card-container">
+    @for (casas of house; track $index) {
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/card-houses/placeholder.svg" alt="imagen cards">
+        </div>
+  
+        <div class="card-body ft-strg ft-lt contenido">
+          <section class="head-content">
+            <h3>{{ casas.name }}</h3>
+          </section>
+          <section class="">
+            <p>{{ casas.words }}  <span> {{casas.founded}}</span></p>
+            <hr>
+            <p>{{ casas.region }}</p>
+            <hr>
+            <p>{{casas.words}}</p>
+          </section>
+        </div>
+  
+        <div class="card-footer ft-lt">
+          <button > Ver más</button>
+        </div>
+      </div>
+    }
+  </div>
