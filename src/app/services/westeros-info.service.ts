@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { House } from '../models/house';
+import { Character } from '../models/character';
+import { Book } from '../models/book';
 
 @Injectable({
   providedIn: 'root'
@@ -10,28 +13,25 @@ import { Observable } from 'rxjs';
 
 export class WesterosInfoService {
   
-  protected apiUrl = 'https://www.anapioficeandfire.com/api';
+  private apiUrl = 'https://www.anapioficeandfire.com/api';
 
     apiBook = `${this.apiUrl}/books`;
     apiHouse = `${this.apiUrl}/houses`;
     apiCharacter = `${this.apiUrl}/characters`;
 
 
-    constructor(protected http: HttpClient) { }
+    constructor(private http: HttpClient) { }
 
 
-    getHouses(): Observable<any> {
-    return this.http.get<any>(this.apiHouse);
+    getHouses(): Observable<House[]> {
+      return this.http.get<House[]>(`${this.apiUrl}/houses`);
+    }
+
+    getCharacters(): Observable<Character[]> {
+      return this.http.get<Character[]>(`${this.apiUrl}/characters`);
+    }
+  
+    getBooks(): Observable<Book[]> {
+      return this.http.get<Book[]>(`${this.apiUrl}/books`);
+    }
   }
-
-  getCharacters(): Observable<any> {
-    return this.http.get<any>(this.apiCharacter);
-  }
-
-  getBooks(): Observable<any> {
-    return this.http.get<any>(this.apiBook);
-  }
-
-
-
-}
