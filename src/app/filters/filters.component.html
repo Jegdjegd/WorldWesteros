@@ -1,0 +1,9 @@
+<mat-form-field>
+  <mat-label>Libros</mat-label>
+  <mat-select [formControl]="bookControl">
+    @for (book of books; track book.url) {
+      <mat-option [value]="book.name">{{ book.name }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+  

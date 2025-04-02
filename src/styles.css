@@ -1,3 +1,8 @@
+:root {
+    /* Cambia el color primario (ej: azul personalizado) */
+    --mat-sys-primary: rgb(254, 161, 0) !important;   
+  }
+  
 body{
     background-image: url('/root/bg.webp'), linear-gradient(to bottom, #000, #000000b9);
     background-blend-mode: multiply;

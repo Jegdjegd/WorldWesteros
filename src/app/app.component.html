@@ -1,15 +1,19 @@
-<div class="contenedor"> 
+
+<div class="app-container">
   
-  <main>
-    <router-outlet></router-outlet>
-  </main>
-   
+  <div class="content-wrapper">
 
+    <main class="main-content">
+      <!-- COMPONENTE FILTRO -->
+      <router-outlet>
 
-  <footer>
-    <div class="footer">
-      <p>© 2025 Game of Thrones</p>
-    </div>
-  </footer>
-
+      </router-outlet>
+    </main>
+    
+    <nav class="footer-nav">
+      <app-navigator></app-navigator>
+    </nav>
+  </div>
+  
+ 
 </div>

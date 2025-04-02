@@ -1,0 +1,74 @@
+/* Estilos base */
+.f-content {
+  margin: -20px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: Cinzel, MedievalSharp, -apple-system, sans-serif;
+}
+
+/* Dock principal */
+.dock-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 10px;
+  margin-bottom: 1.2dvh;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos del dock */
+.dock-item-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tooltip */
+.dock-tooltip {
+  position: absolute;
+  top: -40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.dock-item-container:hover .dock-tooltip {
+  opacity: 1;
+}
+
+/* Iconos */
+.dock-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(254, 161, 0, 0.422);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dock-item:hover {
+  transform: scale(1.2);
+  background: rgba(254, 157, 0, 0.575);
+}
+
+img, .dock-icon {
+  width: 24px;
+  height: 24px;
+}
+

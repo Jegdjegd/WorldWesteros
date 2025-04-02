@@ -1,0 +1,4 @@
+:root {
+  /* Cambia el color primario (ej: azul personalizado) */
+  --mat-sys-primary: rgb(254, 161, 0) !important;   
+}
