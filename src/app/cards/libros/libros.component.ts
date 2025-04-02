@@ -19,7 +19,6 @@ export class LibrosComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log('Componente libro inicializado');
 
     this.apiService.getBooks().subscribe(data => 
       {

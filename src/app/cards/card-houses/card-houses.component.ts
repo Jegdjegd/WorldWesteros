@@ -21,7 +21,6 @@ export class CardHousesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log('Componente inicializado'); // Verifica que se ejecuta
     this.apiService.getHouses().subscribe(data => {
       this.houses = data;
       this.cdr.markForCheck(); // Forzar la detección de cambios
